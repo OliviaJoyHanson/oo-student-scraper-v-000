@@ -7,7 +7,7 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(student)
+  def self.create_from_collection(student_array)
 
   end
 
