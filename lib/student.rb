@@ -7,13 +7,15 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(student_index_array)
-    student_index_array.each do |student_hash|
+  def self.create_from_collection(students_array)
+    students_array.each do |student_hash|
       new(student_hash)
     end
   end
 
-  def add_student_attributes
-
+  def add_student_attributes(student_hash)
+    student_hash.each do |student_attributes|
+      Student.new(student_attributes)
+    end
   end
 end
