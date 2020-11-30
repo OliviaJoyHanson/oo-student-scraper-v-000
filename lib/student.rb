@@ -9,7 +9,7 @@ class Student
 
   def self.create_from_collection(student_index_array)
     student_index_array.each do |student|
-      if Scraper.scrape_index_page(student)
+      @@all << Scraper.scrape_index_page(student)
     end
   end
 
