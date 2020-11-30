@@ -13,5 +13,5 @@ class Student
 
   def add_student_attributes
 
-  end 
+  end
 end
