@@ -7,8 +7,10 @@ class Student
     @@all << self
   end
 
-  def self.create_from_collection(student_array)
-
+  def self.create_from_collection(student_index_array)
+    student_index_array.each do |student|
+      if Scraper.scrape_index_page(student)
+    end
   end
 
   def add_student_attributes
