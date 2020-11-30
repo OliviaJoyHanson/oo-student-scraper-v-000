@@ -6,4 +6,12 @@ class Student
     hash.each{|key, value| self.send("#{key}=", value)}
     @@all << self
   end
+
+  def self.create_from_collection
+
+  end
+
+  def add_student_attributes
+
+  end 
 end
